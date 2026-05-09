@@ -170,12 +170,12 @@ export const ChatBot = () => {
         {isOpen && (
           <motion.div
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            className="fixed bottom-20 right-4 md:bottom-24 md:right-8 w-[calc(100vw-2rem)] md:w-96 rounded-2xl bg-background shadow-2xl border border-border overflow-hidden z-50 flex flex-col max-h-[80vh]"
+            className="fixed bottom-20 right-4 md:bottom-24 md:right-8 w-[calc(100vw-2rem)] md:w-96 rounded-2xl bg-black/95 backdrop-blur-2xl shadow-[0_0_30px_rgba(0,0,0,0.8)] border border-white/10 overflow-hidden z-50 flex flex-col max-h-[80vh]"
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
           >
             {/* Header */}
-            <div className="p-4 border-b border-border bg-secondary/50 backdrop-blur-sm">
+            <div className="p-4 border-b border-white/10 bg-white/5 backdrop-blur-md">
               <div className="flex justify-between items-center">
                 <div>
                   <h3 className="font-grotesk font-bold">
@@ -239,13 +239,13 @@ export const ChatBot = () => {
                   )}
 
                   {message.type === "bot" && !message.category && (
-                    <div className="bg-secondary/50 rounded-2xl p-4 max-w-[80%]">
+                    <div className="bg-white/10 border border-white/5 rounded-2xl p-4 max-w-[80%] shadow-lg">
                       <p className="text-sm">{message.content}</p>
                     </div>
                   )}
 
                   {message.type === "user" && (
-                    <div className="bg-primary text-primary-foreground rounded-2xl p-4 max-w-[80%]">
+                    <div className="bg-primary text-primary-foreground rounded-2xl p-4 max-w-[80%] shadow-lg">
                       <p className="text-sm">{message.content}</p>
                     </div>
                   )}
@@ -258,7 +258,7 @@ export const ChatBot = () => {
                 {suggestionCategories.map((category) => (
                   <motion.button
                     key={category.value}
-                    className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-secondary/50 hover:bg-secondary text-sm transition-colors"
+                    className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 text-sm transition-colors shadow-sm"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => handleSuggestionClick(category.value)}
@@ -271,10 +271,10 @@ export const ChatBot = () => {
             </div>
 
             {/* Input */}
-            <div className="p-4 border-t border-border bg-background">
+            <div className="p-4 border-t border-white/10 bg-black/60 backdrop-blur-md">
               <div className="flex gap-2">
                 <input
-                  className="flex-1 bg-secondary/50 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 text-white placeholder:text-white/40 shadow-inner"
                   placeholder="Ask me anything..."
                   type="text"
                   value={inputValue}
