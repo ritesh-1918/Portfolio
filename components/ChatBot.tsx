@@ -145,7 +145,7 @@ export const ChatBot = () => {
       {/* Chat Button */}
       <motion.button
         animate={{ scale: 1, opacity: 1 }}
-        className="fixed bottom-8 right-8 p-4 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all z-40"
+        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 p-3 md:p-4 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all z-40"
         initial={{ scale: 0.8, opacity: 0 }}
         aria-label="Open portfolio assistant"
         onClick={() => setIsOpen(true)}
@@ -170,7 +170,7 @@ export const ChatBot = () => {
         {isOpen && (
           <motion.div
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            className="fixed bottom-24 right-8 w-96 rounded-2xl bg-background shadow-2xl border border-border overflow-hidden z-40"
+            className="fixed bottom-20 right-4 md:bottom-24 md:right-8 w-[calc(100vw-2rem)] md:w-96 rounded-2xl bg-background shadow-2xl border border-border overflow-hidden z-50 flex flex-col max-h-[80vh]"
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
           >
@@ -208,7 +208,7 @@ export const ChatBot = () => {
             </div>
 
             {/* Messages */}
-            <div className="h-[400px] overflow-y-auto p-4 space-y-4">
+            <div className="flex-1 overflow-y-auto p-4 space-y-4 max-h-[400px]">
               {messages.map((message, index) => (
                 <motion.div
                   key={index}
