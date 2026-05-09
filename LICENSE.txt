@@ -1,0 +1,36 @@
+PORTFOLIO TEMPLATE LICENSE
+
+Copyright (c) 2025 [Soorya Krishan P R]
+
+PERSONAL USE LICENSE
+
+This license grants the purchaser the right to:
+✅ Use this template for ONE personal portfolio website
+✅ Modify the template for personal use
+✅ Deploy the website to any hosting platform
+✅ Receive the template files and documentation
+
+This license DOES NOT allow the purchaser to:
+❌ Resell, redistribute, or share the template files
+❌ Use the template for client projects (requires Commercial License)
+❌ Claim the template as their own work
+❌ Create derivative templates for sale
+
+COMMERCIAL USE LICENSE (Separate Purchase Required)
+
+The Commercial License includes all Personal Use rights, plus:
+✅ Use the template for unlimited client projects
+✅ Modify and customize for commercial purposes
+✅ Use in agency or freelance work
+
+NO WARRANTY
+
+This template is provided "as is" without warranty of any kind, express or implied. 
+The author is not liable for any damages arising from the use of this template.
+
+SUPPORT
+
+Support is provided via email for setup and configuration questions only.
+Custom development requests are not included.
+
+For questions, contact: [sooryakriz111@gmail.com]
