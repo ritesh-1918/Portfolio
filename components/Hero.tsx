@@ -39,6 +39,7 @@ export const Hero = () => {
   return (
     <GridBackground>
       <section
+        id="hero"
         ref={ref}
         className="relative min-h-screen flex items-start py-10 justify-center overflow-hidden"
       >
