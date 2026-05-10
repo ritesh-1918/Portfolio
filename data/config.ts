@@ -87,8 +87,8 @@ export const siteConfig = {
     ],
     actions: {
       primary: {
-        text: "Download CV",
-        url: "/cv.pdf",
+        text: "Download Ritesh's CV",
+        url: "/Ritesh_Bonthalakoti_Resume.pdf",
         downloadName: "Ritesh_Bonthalakoti_Resume.pdf",
       },
       secondary: {
