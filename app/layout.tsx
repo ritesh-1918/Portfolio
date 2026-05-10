@@ -123,7 +123,7 @@ export default function RootLayout({
                   sameAs: [
                     "https://github.com/ritesh-1918",
                     "https://linkedin.com/in/ritesh1908",
-                    "https://instagram.com/ritesh_191800",
+                    "https://instagram.com/ritesh_19180",
                     "https://ritesh1918.substack.com",
                   ],
                   address: {

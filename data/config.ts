@@ -24,7 +24,7 @@ export const siteConfig = {
   themeColor: "#000000",
   socials: {
     github: "https://github.com/ritesh-1918",
-    instagram: "https://instagram.com/ritesh_191800",
+    instagram: "https://instagram.com/ritesh_19180",
     linkedin: "https://linkedin.com/in/ritesh1908",
     email: "mailto:bonthalamadhavi1@gmail.com",
     substack: "https://ritesh1918.substack.com",
@@ -132,7 +132,7 @@ export const siteConfig = {
     cta: "Send Message",
     socialLinks: {
       github: "https://github.com/ritesh-1918",
-      instagram: "https://instagram.com/ritesh_191800",
+      instagram: "https://instagram.com/ritesh_19180",
       linkedin: "https://linkedin.com/in/ritesh1908",
       substack: "https://ritesh1918.substack.com",
       email: "mailto:bonthalamadhavi1@gmail.com",
