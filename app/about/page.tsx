@@ -144,9 +144,9 @@ export default function AboutPage() {
       {/* About Section */}
       <About 
         imageSrc="/about-me.jpg" 
-        objectFit="cover" 
+        objectFit="contain" 
         zoom={false} 
-        imageAspect="aspect-[9/16] md:aspect-[4/5] lg:aspect-[3/4]"
+        imageAspect="aspect-[1/2] md:aspect-[9/16] lg:aspect-[3/4] min-h-[500px]"
       />
 
       {/* Interests Section */}

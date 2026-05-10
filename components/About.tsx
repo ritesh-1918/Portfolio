@@ -148,7 +148,7 @@ export const About = ({
                 priority
                 alt={siteConfig.about.image.alt}
                 className={`${
-                  objectFit === "cover" ? "object-cover" : "object-contain p-4"
+                  objectFit === "cover" ? "object-cover" : "object-contain"
                 } ${zoom ? "scale-125 group-hover:scale-110" : "scale-100 group-hover:scale-[1.02]"} object-center w-full h-full filter grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out`}
                 height={1200}
                 src={displayImage}
