@@ -74,7 +74,69 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning className="dark" lang="en">
-      <head />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": "https://riteshbonthalakoti.vercel.app/#website",
+                  url: "https://riteshbonthalakoti.vercel.app",
+                  name: "Ritesh Bonthalakoti | Portfolio",
+                  description:
+                    "Electronics & Communication Engineering student building at the intersection of AI, embedded hardware, and full-stack development.",
+                  publisher: {
+                    "@id":
+                      "https://riteshbonthalakoti.vercel.app/#person",
+                  },
+                },
+                {
+                  "@type": "Person",
+                  "@id": "https://riteshbonthalakoti.vercel.app/#person",
+                  name: "Ritesh Bonthalakoti",
+                  url: "https://riteshbonthalakoti.vercel.app",
+                  image:
+                    "https://riteshbonthalakoti.vercel.app/images/headshot-ritesh.png",
+                  jobTitle:
+                    "AI & Embedded Systems Engineer | Entrepreneur",
+                  description:
+                    "Electronics & Communication Engineering student from Visakhapatnam, India. Building at the intersection of AI, embedded hardware, and full-stack development. Co-founder of startups, hackathon leader, and collaborator with IIT Bombay, Infosys, and PUSULA International.",
+                  knowsAbout: [
+                    "Artificial Intelligence",
+                    "Machine Learning",
+                    "Embedded Systems",
+                    "ESP32",
+                    "IoT",
+                    "Full-Stack Development",
+                    "React",
+                    "Next.js",
+                    "Python",
+                    "Entrepreneurship",
+                  ],
+                  alumniOf: {
+                    "@type": "EducationalOrganization",
+                    name: "Diploma in Electronics & Communication Engineering",
+                  },
+                  sameAs: [
+                    "https://github.com/ritesh-1918",
+                    "https://linkedin.com/in/ritesh1908",
+                    "https://instagram.com/ritesh_191800",
+                    "https://ritesh1918.substack.com",
+                  ],
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Visakhapatnam",
+                    addressCountry: "IN",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         suppressHydrationWarning
         className={`${grotesk.variable} ${mono.variable} font-sans antialiased min-h-screen flex flex-col bg-black text-white`}
