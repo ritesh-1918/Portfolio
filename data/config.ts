@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Ritesh Bonthalakoti",
   title: "Ritesh Bonthalakoti | Portfolio",
-  ogImage: "https://ritesh1918.netlify.app/og-image.png",
-  url: "https://ritesh1918.netlify.app",
+  ogImage: "https://riteshbonthalakoti.vercel.app/og-image.png",
+  url: "https://riteshbonthalakoti.vercel.app",
   description:
     "Electronics & Communication Engineering student building at the intersection of AI, embedded hardware, and full-stack development.",
   keywords: [
@@ -18,7 +18,7 @@ export const siteConfig = {
     "React",
   ],
   authors: [
-    { name: "Ritesh Bonthalakoti", url: "https://ritesh1918.netlify.app" },
+    { name: "Ritesh Bonthalakoti", url: "https://riteshbonthalakoti.vercel.app" },
   ],
   creator: "Ritesh Bonthalakoti",
   themeColor: "#000000",
