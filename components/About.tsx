@@ -10,11 +10,13 @@ import { siteConfig } from "@/data/config";
 export const About = ({ 
   imageSrc, 
   objectFit = "cover",
-  zoom = false
+  zoom = false,
+  imageAspect = "aspect-[4/5] md:aspect-[3/4]"
 }: { 
   imageSrc?: string;
   objectFit?: "cover" | "contain";
   zoom?: boolean;
+  imageAspect?: string;
 }) => {
   const displayImage = imageSrc || siteConfig.about.image.src;
 
@@ -137,7 +139,7 @@ export const About = ({
             viewport={{ once: true }}
             whileInView={{ opacity: 1, scale: 1 }}
           >
-            <div className="relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden group shadow-2xl border border-white/10 bg-zinc-950">
+            <div className={`relative ${imageAspect} rounded-3xl overflow-hidden group shadow-2xl border border-white/10 bg-[#0A0A0A]`}>
               {/* Corner Accents - subtle and elegant */}
               <div className="absolute top-4 left-4 w-6 h-6 border-t border-l border-primary/40 z-30" />
               <div className="absolute bottom-4 right-4 w-6 h-6 border-b border-r border-primary/40 z-30" />
@@ -146,8 +148,8 @@ export const About = ({
                 priority
                 alt={siteConfig.about.image.alt}
                 className={`${
-                  objectFit === "cover" ? "object-cover" : "object-contain"
-                } ${zoom ? "scale-125 group-hover:scale-110" : "scale-110 group-hover:scale-100"} object-center w-full h-full filter grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out`}
+                  objectFit === "cover" ? "object-cover" : "object-contain p-4"
+                } ${zoom ? "scale-125 group-hover:scale-110" : "scale-100 group-hover:scale-[1.02]"} object-center w-full h-full filter grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out`}
                 height={1200}
                 src={displayImage}
                 width={1000}

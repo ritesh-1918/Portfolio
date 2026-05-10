@@ -142,7 +142,12 @@ export default function AboutPage() {
       </GridBackground>
 
       {/* About Section */}
-      <About zoom={true} />
+      <About 
+        imageSrc="/about-me.jpg" 
+        objectFit="cover" 
+        zoom={false} 
+        imageAspect="aspect-[9/16] md:aspect-[4/5] lg:aspect-[3/4]"
+      />
 
       {/* Interests Section */}
       <section className="py-20 relative overflow-hidden">
